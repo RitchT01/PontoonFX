@@ -1,0 +1,22 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<DialogPane fx:controller="sample.createAccountController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Please complete required details and enter starting deposit
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Email Address" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="emailAddress" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="Password" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="password" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="Deposit Amount" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Spinner fx:id="accountBalance" GridPane.rowIndex="3" GridPane.columnIndex="1" min="0" max="100" editable="true"
+                     initialValue="20"/>
+        </GridPane>
+    </content>
+</DialogPane>

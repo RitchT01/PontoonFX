@@ -1,0 +1,13 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<DialogPane fx:controller="sample.BetController"
+            xmlns:fx="http://javafx.com/fxml">
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Bet Amount" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Spinner fx:id="betAmount" GridPane.rowIndex="3" GridPane.columnIndex="1" min="0" max="100" editable="true"
+                     initialValue="5"/>
+        </GridPane>
+    </content>
+</DialogPane>

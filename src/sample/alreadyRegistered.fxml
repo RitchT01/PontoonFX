@@ -1,0 +1,9 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<DialogPane fx:controller="sample.createAccountController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        This name has already been registered. Please choose a different username.
+    </headerText>
+</DialogPane>

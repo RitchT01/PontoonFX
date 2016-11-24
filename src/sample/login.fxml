@@ -1,0 +1,17 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="sample.loginController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Enter login details
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Password" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="password" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+
+</DialogPane>

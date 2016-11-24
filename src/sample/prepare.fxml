@@ -1,0 +1,12 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane fx:controller="sample.PrepareController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Instructions go here
+    </headerText>
+    <content>
+
+    </content>
+
+</DialogPane>

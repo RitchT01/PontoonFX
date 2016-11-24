@@ -1,0 +1,87 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainBorderPane" fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <AnchorPane>
+    <MenuBar>
+        <Menu text="File">
+            <items>
+                <MenuItem text="Create New Account" onAction="#newAccount"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Login" onAction="#login"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Logout" onAction="#logout"/>
+                <SeparatorMenuItem/>
+                <MenuItem text = "Exit" onAction="#handleExit"/>
+            </items>
+        </Menu>
+        <Menu text="Account">
+            <items>
+                <MenuItem text="Show Account Balance" onAction="#showBalance"/>
+            </items>
+        </Menu>
+        <Menu text="Help">
+            <items>
+                <MenuItem text="Help"/>
+            </items>
+        </Menu>
+        <Menu text="About">
+            <items>
+                <MenuItem text="About" onAction="#aboutPontoonFX"/>
+            </items>
+        </Menu>
+    </MenuBar>
+            <Label fx:id="login" AnchorPane.rightAnchor="8" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+                   style="-fx-font-weight: bold; -fx-text-fill: black; " />
+        </AnchorPane>
+    </top>
+    <left>
+        <ListView fx:id="optionsListView" onMouseClicked="#handleMouseClick" style="-fx-list-cell:green">
+        </ListView>
+    </left>
+    <center>
+        <VBox
+              style="-fx-background-color: linear-gradient(to right, lightgreen, #182A14)">
+            <Label fx:id="score"
+                   alignment="TOP_RIGHT"  maxWidth="Infinity" textFill="lightgray"
+                   style="-fx-background-color: linear-gradient(to right, lightgreen, #182A14)">
+                <font>
+                    <Font name="Comic Sans MS" size="20"/>
+                </font>
+            </Label>
+            <HBox>
+                <ImageView fx:id="imageView1" fitHeight="300" fitWidth="200"/>
+                <ImageView fx:id="imageView2" fitHeight="300" fitWidth="200"/>
+                <Label fx:id="playersScore" textFill="lightgray" maxHeight="Infinity" maxWidth="200"
+                       style="-fx-background-color: transparent" alignment="TOP_RIGHT">
+                    <font>
+                        <Font name="Comic Sans MS" size="75"/>
+                    </font>
+                </Label>
+            </HBox>
+            <Label maxWidth="Infinity"
+                   style="-fx-background-color: linear-gradient(to right, lightgreen, #182A14)">
+                <font>
+                    <Font name="Comic Sans MS" size="20"/>
+                </font>
+            </Label>
+            <HBox>
+                <ImageView fx:id="imageView3" fitHeight="300" fitWidth="200"/>
+                <ImageView fx:id="imageView4" fitHeight="300" fitWidth="200"/>
+                <ImageView fx:id="imageView5" fitHeight="300" fitWidth="200"/>
+            </HBox>
+            <Label  maxWidth="Infinity"
+                   style="-fx-background-color: linear-gradient(to right, lightgreen, #182A14)">
+                <font>
+                    <Font name="Comic Sans MS" size="20"/>
+                </font>
+            </Label>
+            <HBox>
+                <ImageView fx:id="imageView6" fitHeight="250" fitWidth="600"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
